@@ -6,3 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
     });
 });
+const cursor = document.getElementById('cursor');
+
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+});
