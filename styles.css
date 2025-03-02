@@ -1,0 +1,135 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: red;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 150px;
+}
+
+.mobile-menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.mobile-menu a:hover {
+    background-color: red;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.logo-img{
+    width: 60px;
+    height: 50px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+}
+
+.video-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+video {
+    width: 100%; /* Make the video responsive */
+    height: 100%; /* Full screen */
+    object-fit: cover; /* Ensures the video covers the container without distortion */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark translucent black background */
+    padding: 1000px;
+    border-radius: 8px;
+    width: 80%; /* Ensure overlay spans the entire width of the screen */
+}
+
+.first-text {
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.second-text {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
