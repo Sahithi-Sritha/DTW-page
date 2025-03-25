@@ -14,7 +14,7 @@ body {
     border-radius: 50%;
     pointer-events: none;
     z-index: 1000;
-    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.3);
     transform: translate(-50%, -50%);
 }
 
