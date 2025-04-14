@@ -128,7 +128,7 @@ video {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark translucent black background */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark translucent black background */
     padding: 1000px;
     border-radius: 8px;
     width: 80%; /* Ensure overlay spans the entire width of the screen */
